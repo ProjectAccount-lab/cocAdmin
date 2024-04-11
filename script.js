@@ -18,11 +18,16 @@ function getClanData() {
       redirect: "follow"
     };
     
-    fetch("https://api.clashofclans.com/v1/clans/%232lrrvpuly", requestOptions)
+    try {
+        fetch("https://api.clashofclans.com/v1/clans/%232lrrvpuly", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
-      .catch((error) => console.error(error));
+      
 
+    } catch (error) {
+        (error) => console.error(error);
+    }
+    
 }
 
 
