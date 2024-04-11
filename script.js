@@ -10,6 +10,7 @@ async function getClanData() {
 
     const requestOptions = {
         method: "GET",
+        mode: "no-cors",
         headers: {
             "Authorization": `Bearer ${token}`,
             "Content-Type": "application/json"
