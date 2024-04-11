@@ -4,9 +4,10 @@ getClanData()
 
 
 function getClanData() {
-    let api = proccess.env.API_TOKEN
-    
+ 
+
     const myHeaders = new Headers();
+    let api = proccess.env.API_TOKEN
     myHeaders.append("Authorization", "Bearer%s" + api);
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS");
