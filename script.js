@@ -12,11 +12,13 @@ function getClanData() {
         headers: {
             "Access-Control-Allow-Origin":"*",
             "Accept": "application/json",
-            "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjNjNjdkMDY1LTZhYzUtNDY2OS04MzkwLTEyMWQ0YjVjNDNmOCIsImlhdCI6MTcxMjY1ODIyMSwic3ViIjoiZGV2ZWxvcGVyLzQ3YWNkYWM0LWEzYTAtZDJjMi0yMWI1LWE4MjgwYzI3YjJlZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjkzLjcxLjIyNS4yMjgiXSwidHlwZSI6ImNsaWVudCJ9XX0.7UQRdwWLvt_030Ug_c6hwXvwNOngc74nDKoLQy2qgj7GQd0-tTKROkllSCKLJtomB7tReeXzSeSn9JkzSvqZJQ"
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjNjNjdkMDY1LTZhYzUtNDY2OS04MzkwLTEyMWQ0YjVjNDNmOCIsImlhdCI6MTcxMjY1ODIyMSwic3ViIjoiZGV2ZWxvcGVyLzQ3YWNkYWM0LWEzYTAtZDJjMi0yMWI1LWE4MjgwYzI3YjJlZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjkzLjcxLjIyNS4yMjgiXSwidHlwZSI6ImNsaWVudCJ9XX0.7UQRdwWLvt_030Ug_c6hwXvwNOngc74nDKoLQy2qgj7GQd0-tTKROkllSCKLJtomB7tReeXzSeSn9JkzSvqZJQ"
           }
 
     })
-    .then(response=>console.log(response))
+    .then(res=>res.json())
+    .then(res => res.data)
+    .then(res=>console.log(res));
 
 }
 
