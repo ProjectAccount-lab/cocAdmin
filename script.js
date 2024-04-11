@@ -8,7 +8,7 @@ function getClanData() {
 
     fetch(url,{
         method: "GET",
-        mode: "cors",
+        mode: "no-cors",
         headers: {
             "Access-Control-Allow-Origin":"*",
             "Accept": "application/json",
