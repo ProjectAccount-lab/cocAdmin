@@ -18,7 +18,7 @@ function getClanData() {
     myHeaders.append("Referer","https://projectaccount-lab.github.io/");
     
     const requestOptions = {
-      method: "GET",
+      method: "POST",
       headers: myHeaders,
       mode: "no-cors",
       redirect: "follow"
