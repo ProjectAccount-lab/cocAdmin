@@ -21,7 +21,7 @@ function getClanData() {
     try {
         fetch("https://api.clashofclans.com/v1/clans/%232lrrvpuly", requestOptions)
       .then((response) => response.json())
-      .then((result) => console.log(result))
+      .then((result) => console.log(response))
       
 
     } catch (error) {
