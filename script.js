@@ -14,6 +14,7 @@ function getClanData() {
     const requestOptions = {
       method: "GET",
       headers: myHeaders,
+      mode: "no-cors",
       redirect: "follow"
     };
     
