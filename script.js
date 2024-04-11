@@ -4,7 +4,7 @@ getIPAddress()
 
 
 async function getClanData() {
-    const key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjNkMjUyODdjLTQ3NjgtNDM1NC1hZGMzLTI0Yjk5YmY4YTE3YSIsImlhdCI6MTcxMjg3NTkxMiwic3ViIjoiZGV2ZWxvcGVyLzQ3YWNkYWM0LWEzYTAtZDJjMi0yMWI1LWE4MjgwYzI3YjJlZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjkzLjcxLjIyNS4yMjgiXSwidHlwZSI6ImNsaWVudCJ9XX0.JYjzAfUbQ4lKkAk4qF7VjxFubixw1RviLJeFZ_pQ6Gw5nph4c0FasMGSVEdRsNbJpaRixSz58BdQ1Fjo3bwjfA";
+    const key = "3d25287c-4768-4354-adc3-24b99bf8a17a";
     const clanTag = "%232lrrvpuly"
     const url = `https://api.clashofclans.com/v1/clans/${clanTag}`;
 
