@@ -1,4 +1,3 @@
-getIPAddress()
 
 
 
@@ -31,8 +30,7 @@ async function getClanData() {
     }
 }
 
-// Chiamata alla funzione per recuperare i dati del clan
-getClanData();
+
 
 
 
