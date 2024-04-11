@@ -9,7 +9,7 @@ function getClanData() {
     myHeaders.append("Access-Control-Allow-Headers", "Access-Control-Allow-Origin,Access-Control-Allow-Methods X-Requested-With, content-type, Authorization");
     myHeaders.append("Access-Control-Allow-Credentials", "true");
     myHeaders.append("X-Requested-With", "XMLHttpRequest");
-    myHeaders.append("Access-Control-Allow-Origin", "http://localhost:8100");
+    myHeaders.append("Access-Control-Allow-Origin", "https://projectaccount-lab.github.io/cocAdmin/");
     
     const requestOptions = {
       method: "GET",
