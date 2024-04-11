@@ -27,7 +27,7 @@ function getIPAddress() {
 
     fetch("https://api.whatismyip.com/ip.php?key=c5a159cd8e2d382d14da3376c4e7adb0&output=json")
         .then(response => {
-            console.log(response.json();
+            console.log(response.json());
         })
         .catch(error => console.log("Si è verificato un errore!"))
 
