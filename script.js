@@ -1,9 +1,11 @@
 // getIPAddress()
 getClanData()
- let api = proccess.env.API_TOKEN
+
 
 
 function getClanData() {
+    let api = proccess.env.API_TOKEN
+    
     const myHeaders = new Headers();
     myHeaders.append("Authorization", "Bearer%s" + api);
     myHeaders.append("Content-Type", "application/json");
