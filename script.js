@@ -16,8 +16,8 @@ function getClanData() {
         },
 
     })
-    .then(res => res.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
             console.log(data)
         });
 
