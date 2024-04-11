@@ -10,6 +10,7 @@ function getClanData() {
     myHeaders.append("Access-Control-Allow-Credentials", "true");
     myHeaders.append("X-Requested-With", "XMLHttpRequest");
     myHeaders.append("Access-Control-Allow-Origin", "*");
+    myHeaders.append("Referer","https://projectaccount-lab.github.io/");
     
     const requestOptions = {
       method: "GET",
