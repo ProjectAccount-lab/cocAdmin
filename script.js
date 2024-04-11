@@ -26,7 +26,7 @@ function getIPAddress() {
     const url = "https://api.whatismyip.com/ip.php?key=c5a159cd8e2d382d14da3376c4e7adb0"
     
     
-    fetch(url, {
+    fetch("https://api.ipify.org?format=json", {
         method: "GET",
       })
         .then((response) => response.json())
