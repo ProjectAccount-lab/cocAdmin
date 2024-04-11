@@ -9,7 +9,7 @@ function getClanData() {
     myHeaders.append("Access-Control-Allow-Headers", "Access-Control-Allow-Origin,Access-Control-Allow-Methods X-Requested-With, content-type, Authorization");
     myHeaders.append("Access-Control-Allow-Credentials", "true");
     myHeaders.append("X-Requested-With", "XMLHttpRequest");
-    myHeaders.append("Access-Control-Allow-Origin", "https://projectaccount-lab.github.io/cocAdmin/");
+    myHeaders.append("Access-Control-Allow-Origin", "*");
     
     const requestOptions = {
       method: "GET",
@@ -20,7 +20,7 @@ function getClanData() {
     
     try {
         fetch("https://api.clashofclans.com/v1/clans/%232lrrvpuly", requestOptions)
-      .then((response) => response.text())
+      .then((response) => response.json())
       .then((result) => console.log(result))
       
 
