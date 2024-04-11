@@ -31,7 +31,7 @@ function getIPAddress() {
       })
         .then((response) => response.json())
         .then((data) => {
-            console.log(response)
+            console.log(data)
         })
 
 }
