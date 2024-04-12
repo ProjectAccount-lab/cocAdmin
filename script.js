@@ -18,6 +18,8 @@ async function getClanData() {
       
     };
     
+    myHeaders.get("Content-Type"); // should return 'text/xml'
+    
     fetch("https://api.clashofclans.com/v1/clans/%232lrrvpuly", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
