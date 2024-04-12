@@ -25,7 +25,7 @@ fetch("https://api.clashofclans.com/v1/clans/%232lrrvpuly", requestOptions)
   .catch((error) => console.error(error));
 }
 
-
+getClanData()
 
 
 
