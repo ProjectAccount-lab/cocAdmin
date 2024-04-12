@@ -16,6 +16,7 @@ myHeaders.append("X-Requested-With", "XMLHttpRequest");
 const requestOptions = {
   method: "GET",
   headers: myHeaders,
+  mode:"no-cors",
   redirect: "follow"
 };
 
