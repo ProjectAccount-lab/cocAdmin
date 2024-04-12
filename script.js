@@ -36,7 +36,7 @@ function getSingleMember() {
         .then(response => {
             console.log(response);
         })
-        .catch(error => console.log("Si è verificato un errore!"))
+        .catch(_error => console.log("Si è verificato un errore!"))
 
 }
 
