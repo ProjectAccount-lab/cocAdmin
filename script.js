@@ -4,31 +4,26 @@ getIPAddress()
 
 
 async function getClanData() {
-    const key = "3d25287c-4768-4354-adc3-24b99bf8a17a";
-    const clanTag = "%232lrrvpuly"
-    const url = `https://api.clashofclans.com/v1/clans/${clanTag}`;
+    const myHeaders = new Headers();
+    myHeaders.append("Host", "https://projectaccount-lab.github.io/cocAdmin/");
 
-    const requestOptions = {
-        method: "GET",
-        mode: "no-cors",
-        headers: {
-            "Authorization": `Bearer ${key}`,
-            "Content-Type": "application/json"
-        }
-    };
+myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjQwNmU5Yjg4LTJjZjEtNGFlMy1iZGMyLWU4ZTI3NDUyMjVhMSIsImlhdCI6MTcxMjg2OTE5Niwic3ViIjoiZGV2ZWxvcGVyLzQ3YWNkYWM0LWEzYTAtZDJjMi0yMWI1LWE4MjgwYzI3YjJlZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjkzLjcxLjIyNS4yMjgiXSwidHlwZSI6ImNsaWVudCJ9XX0.3uSeTxn2LROUD7-4Ilq0sYzM_A_qpusI1mXAxcKyvf3gSdJYTqhNUvQLawiRehpdtcTReAomy7AoC2MgTtiX-g");
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS");
+myHeaders.append("Access-Control-Allow-Headers", "Access-Control-Allow-Origin,Access-Control-Allow-Methods X-Requested-With, content-type, Authorization");
+myHeaders.append("Access-Control-Allow-Credentials", "true");
+myHeaders.append("X-Requested-With", "XMLHttpRequest");
 
-    try {
-        const response = await fetch(url, requestOptions);
+const requestOptions = {
+  method: "GET",
+  headers: myHeaders,
+  redirect: "follow"
+};
 
-        if (!response.ok) {
-            throw new Error(`Errore HTTP! Stato: ${response.status}`);
-        }
-
-        const data = await response.json();
-        console.log(data); // Output dei dati recuperati
-    } catch (error) {
-        console.error("Si è verificato un errore durante il recupero dei dati del clan:", error);
-    }
+fetch("https://api.clashofclans.com/v1/clans/%232lrrvpuly", requestOptions)
+  .then((response) => response.text())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
 }
 
 // Chiamata alla funzione per recuperare i dati del clan
