@@ -20,7 +20,7 @@ const requestOptions = {
   redirect: "follow"
 };
 
-fetch("https://api.clashofclans.com/v1/clans/%232lrrvpuly", requestOptions)
+fetch("https://api.clashofclans.com/v1/clans/%232LRRVPULY", requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
   .catch((error) => console.error(error));
