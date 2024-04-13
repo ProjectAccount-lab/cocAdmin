@@ -16,7 +16,7 @@ async function getClanData() {
     const requestOptions = {
       method: "GET",
       redirect: "follow",
-      mode: "no-cors",
+      
       headers: myHeaders,
       
     };
